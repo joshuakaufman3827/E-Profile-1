@@ -48,7 +48,7 @@
     </ul>
   </nav>
   <header class="header">
-   </div class="header__content">
+   <div class="header__content">
      <h1 class="title">Hey!</h1>
      <h1 class="title title--secondary">I'm Joshua</h1>   
      <p class="header__para">
@@ -78,7 +78,7 @@
      <div class="scroll__icon click"></div>   
     </a>
     <div class="modal">
-        <div class="modal__half__about">
+        <div class="modal__half modal__about">
          <h3 class="modal__title">Here's some more about me</h3>
          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
          <p class="modal__para">
@@ -104,9 +104,29 @@
                 <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
                 <span class="language__name">Vue.js</span>
             </figure>
-         </div>
+          </div>
         </div>
-        <div class="modal__half__contact">Let's have a chat!</div>
+        <div class="modal__half modal__contact">
+         <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+         </h3>
+         <h3 class="modal__sub-title modal__sub-title--contact">
+           I'm always open to discussing new projects and creative ideas.
+         </h3>
+         <form id="contact__form" action="">
+         <div class="form__item">
+           <label class="form__item--label">Name</label>
+           <input class="input" name="user_name" type="text" required></Input>
+         </div>
+         <div class="form__item">
+           <label class="form__item--label">Email</label>
+           <input class="input" name="user_email" type="email" required></Input>
+         </div>
+         <div class="form__item">
+           <label class="form__item--label">Message</label>
+           <textarea class="input" name="message" type="text" required></textarea>
+         </div>
+       </form>
     </div>
   </section>
   <section id="projects">
