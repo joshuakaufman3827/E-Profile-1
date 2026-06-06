@@ -398,6 +398,7 @@ Modal
     justify-content: center;
     font-family: 80px;
     opacity: 0.9;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
@@ -413,6 +414,10 @@ Modal
     text-align: center;
     padding: 28px;
 
+}
+
+.modal__overlay--visible {
+    z-index: 1;
 }
 
 .fa-spinner {
