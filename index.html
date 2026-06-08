@@ -78,7 +78,7 @@
       </div>
      </div>
    </header>
-   <button class="mail__btn click">
+   <button class="mail__btn click" onclick="toggleModal()">
     <i class="fas fa-envelope"></i> 
    </button>
    <a href="#projects" class="scroll">
@@ -95,25 +95,26 @@
            I'm currently working on a variety of difficult projects with the ability to increase your productivity.
          </p>
          <div class="modal__languages">
-            <figure>
+            <figure class="modal__language">
                 <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
                 <span class="language__name">HTML</span>
             </figure>
-             <figure>
+             <figure class="modal__language">
                 <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
                 <span class="language__name">CSS</span>
             </figure>
-             <figure>
+             <figure class="modal__language">
                 <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
                 <span class="language__name">JavaScript</span>
             </figure>
-             <figure>
+             <figure class="modal__language">
                 <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
                 <span class="language__name">Vue.js</span>
             </figure>
           </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click"></i>
          <h3 class="modal__title modal__title--contact">
             Let's have a chat!
          </h3>
