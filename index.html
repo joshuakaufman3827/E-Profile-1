@@ -31,7 +31,7 @@
           link__hover-effect--black
        ">About</a>
       </li>
-      <li class="nav__link">
+      <li class="nav__link" onclick="toggleModal()">
        <a href ="#" class="
           nav__link--anchor
           link__hover-effect
@@ -63,7 +63,7 @@
        applications with excellent 
        user experiences. 
        <br>
-       Here you can find information about <b class="orange">my projects, skills, and experiences</b>.
+       Here you can find information about <b class="orange" onclick="toggleModal()">my projects, skills, and experiences</b>.
      </p>
      <div class="social__list">
        <a href="https://github.com/joshuakaufman3827" target="_blank" class="social__link">
@@ -86,6 +86,7 @@
     </a>
     <div class="modal">
         <div class="modal__half modal__about">
+          <i class="fas fa-times modal__exit click"onclick="toggleModal()"></i>
          <h3 class="modal__title">Here's some more about me</h3>
          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
          <p class="modal__para">
@@ -114,7 +115,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-            <i class="fas fa-times modal__exit click"></i>
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
          <h3 class="modal__title modal__title--contact">
             Let's have a chat!
          </h3>

@@ -18,7 +18,7 @@ function moveBackground(event) {
   }
 }
 
-function contact() {
+function contact(event) {
  event.preventDefault();
  const loading = document.querySelector('.modal__overlay--loading');
  const success = document.querySelector('.modal__overlay--success');
@@ -40,7 +40,6 @@ function contact() {
  });
 }
 
-let isModalOpen = false;
 function toggleModal() {
  if (isModalOpen) {
     isModalOpen = false;
