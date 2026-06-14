@@ -5,226 +5,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Kaufman</title>
+    <title>Joshua Kaufman | Front-End Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3b7cfb0a39.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
         emailjs.init("user_hEvFFvKV8WJkG9qTY");
-   })();
-</script>    
+      })();
+    </script>    
 </head>
 
 <body>
-  <section id="home">
-    <nav>
-      <Figure>
-        <img id="personal-logo" src="./assets/logo.svg" alt="Logo">
-      </Figure>
+  <header class="hero-section">
+    <nav class="navbar">
+      <figure class="logo-container">
+        <img id="personal-logo" src="./assets/logo.svg" alt="Joshua Kaufman Logo">
+      </figure>
       <ul class="nav__link--list">
-       <li class="nav__link">
-        <a href ="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black
-       ">About</a>
-      </li>
-      <li class="nav__link" onclick="toggleModal()">
-       <a href ="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black
-        ">Projects</a>
-      </li>
-      <li class="nav__link">
-        <a href ="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black
-        ">Contact</a>
-      </li>
-      <li class="nav__link click">
-        <a href ="#" class="
-           nav__link--anchor
-           link__hover-effect
-           link__hover-effect--black
-        "><i class="fas fa-adjust"></i></a>
-      </li>
-    </ul>
-  </nav>
-  <header class="header">
-   <div class="header__content">
-     <h1 class="title">Hey!</h1>
-     <h1 class="title title--secondary">I'm Joshua</h1>   
-     <p class="header__para">
-       I'm a <b class="orange">Frontend Software Engineer</b> With passion for building web
-       applications with excellent 
-       user experiences. 
-       <br>
-       Here you can find information about <b class="orange" onclick="toggleModal()">my projects, skills, and experiences</b>.
-     </p>
-     <div class="social__list">
-       <a href="https://github.com/joshuakaufman3827" target="_blank" class="social__link">
-         <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/joshbkaufman/" target="_blank" class="social__link">
-         <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="./assets/Example Resume.pdf" target="_blank" class="social__link">
-           <i class="fas fa-file-pdf"></i>
-        </a>
+        <li class="nav__link"><a href="#projects" class="nav__link--anchor">Projects</a></li>
+        <li class="nav__link"><a href="#contact" class="nav__link--anchor">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <span class="hero-subtitle">FRONT-END DEVELOPER PORTFOLIO</span>
+      <h1 class="hero-title">Hi, I’m <br><span class="highlight-text">Joshua.</span></h1>
+      <p class="hero-para">
+        Hi, I'm Joshua, a passionate Front-End Developer driven by the ambition to craft intuitive and impactful digital experiences at scale. My journey is fueled by curiosity, adaptability, and a commitment to building solutions that not only meet technical specifications but also delight users.
+      </p>
+      <div class="hero-cta-links">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="./assets/Example Resume.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
       </div>
-     </div>
-   </header>
-   <button class="mail__btn click" onclick="toggleModal()">
-    <i class="fas fa-envelope"></i> 
-   </button>
-   <a href="#projects" class="scroll">
-     <div class="scroll__icon click"></div>   
-    </a>
-    <div class="modal">
-        <div class="modal__half modal__about">
-          <i class="fas fa-times modal__exit click"onclick="toggleModal()"></i>
-         <h3 class="modal__title">Here's some more about me</h3>
-         <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
-         <p class="modal__para">
-           I'm a <b class="orange">frontend software engineer</b> with a passion for building web applications with excellent user experiences. I have experience working with HTML, CSS, JavaScript,
-           and great user interfaces.
-         <br>
-           I'm currently working on a variety of difficult projects with the ability to increase your productivity.
-         </p>
-         <div class="modal__languages">
-            <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
-                <span class="language__name">HTML</span>
-            </figure>
-             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
-                <span class="language__name">CSS</span>
-            </figure>
-             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
-                <span class="language__name">JavaScript</span>
-            </figure>
-             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/triangle.svg" alt="Programming Languages">
-                <span class="language__name">Vue.js</span>
-            </figure>
+      <div class="social__list">
+        <a href="https://github.com/joshuakaufman3827" target="_blank" class="social__link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/joshbkaufman/" target="_blank" class="social__link"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:your-email@example.com" class="social__link"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="identity-section">
+    <span class="section-tag">FRONT-END DEVELOPER • UI-FOCUSED • GROWTH-MINDED</span>
+    <h2>The “User-Centric Growth” Engineer</h2>
+    <p class="identity-para">
+      I build front-end solutions with a product manager’s mindset. My engineering process focuses on identifying user friction as a blueprint for writing better, clean code. By combining responsive structures with a deep understanding of user behavior, I ensure every feature is optimized for engagement, accessibility, and long-term product growth.
+    </p>
+    <div class="pill-tags">
+      <span class="pill">Clean front-end structure</span>
+      <span class="pill">Responsive user interfaces</span>
+      <span class="pill">User-centered thinking</span>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <span class="section-tag">FEATURED WORK</span>
+      <h2 class="section__title">Projects that show my front-end growth</h2>
+      <p class="section-subtitle-para">
+        My portfolio showcases a curated selection of projects where I've applied modern front-end principles to solve real-world problems. Each endeavor reflects my dedication to clean, maintainable code, responsive design, and exceptional user experience.
+      </p>
+      
+      <ul class="project__list">
+        <li class="project-card">
+          <div class="project__img-container">
+            <img src="./assets/blinker mockup.png" class="project__img" alt="Car Sales Project Preview">
           </div>
-        </div>
-        <div class="modal__half modal__contact">
-            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-         <h3 class="modal__title modal__title--contact">
-            Let's have a chat!
-         </h3>
-         <h3 class="modal__sub-title modal__sub-title--contact">
-           I'm always open to discussing new projects and creative ideas.
-         </h3>
-         <form id="contact__form" onsubmit="contact(event)">
-         <div class="form__item">
-           <label class="form__item--label">Name</label>
-           <input class="input" name="user_name" type="text" required></Input>
-         </div>
-         <div class="form__item">
-           <label class="form__item--label">Email</label>
-           <input class="input" name="user_email" type="email" required></Input>
-         </div>
-         <div class="form__item">
-           <label class="form__item--label">Message</label>
-           <textarea class="input" name="message" type="text" required></textarea>
-         </div>
-         <button i="contact__submit" class="form__submit">
-          Send it my way!
-         </button>
-       </form>
-       <div class="modal__overlay modal__overlay--loading">
-        <i class="fas fa-spinner"></i>
-       </div>
-       <div class="modal__overlay modal__overlay--success">
-         Thanks for reaching out! I'll get back to you as soon as I can.
-       </div>
-    </div>
-    <i class="fas fa-times modal__exit click"></i>
-  </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-     <div class="row">
-       <h1 class="section__title">
-         Here are some of my <span class="orange">projects</span>
-       </h1>
-       <ul class="project__list">
-         <li class="project">
-            <div class="project__wrapper">
-                <img src="./assets/blinker mockup.png" class="project__img" alt="project mockup">
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                        Car Sales Projects
-                    </h3>
-                    <h4 class="project__description--sub-title">
-                        HTML, CSS, JavaSCript, Vue, Vuex
-                    </h4>
-                    <p class="project__description--para">
-                        A car sales project built using Vue and Vuex. It features a responsive design, dynamic content rendering, and state management for a seamless user experience.
-                    </p>
-                    <div class="project__description--links">
-                        <a href="#" class="project__description--link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="project__description--link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-               </div>
-            </div>       
-          </li>
+          <div class="project__info">
+            <h3 class="project-card-title">Car Sales Dashboard</h3>
+            <h4 class="project-card-tech">HTML, CSS, JavaScript, Vue, Vuex</h4>
+            <p class="project-card-desc">
+              A car sales project built using Vue and Vuex. It features a responsive design, dynamic content rendering, and centralized state management for a seamless user experience.
+            </p>
+            <div class="project-card-actions">
+              <a href="#" class="btn-text-link">View Live Project →</a>
+              <a href="https://github.com/joshuakaufman3827" target="_blank" class="project-git-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </li>
         </ul>
-      </div>
     </div>
   </section>
-  <footer>
+
+  <section id="contact" class="contact-inline-section">
     <div class="container">
-      <div class="footer__row">
-   
-     <figure>
-       <img class="footer__logo--img" src="./assets/logo.svg" alt="logo">
-     </figure>
-     <div class="footer__social--list">
-       <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-      ">
-        Github
-      </a>
-       <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-      ">
-        LinkedIn
-      </a>
-       <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-      ">
-        Contact
-       </a>
-       <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-      ">
-        Resume
-       </a>
+      <h2>Let's have a chat!</h2>
+      <h3>I'm always open to discussing new projects and creative ideas.</h3>
+      
+      <form id="contact__form" onsubmit="contact(event)">
+        <div class="form__item">
+          <label class="form__item--label">Name</label>
+          <input class="input" name="user_name" type="text" required>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Email</label>
+          <input class="input" name="user_email" type="email" required>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Message</label>
+          <textarea class="input" name="message" required></textarea>
+        </div>
+        <button id="contact__submit" class="form__submit-btn">Send it my way!</button>
+      </form>
+    </div>
+  </section>
+
+  <a href="#contact" class="floating-mail-btn">
+    <i class="fas fa-envelope"></i> 
+  </a>
+
+  <footer>
+    <div class="footer-content">
+      <figure>
+        <img class="footer__logo--img" src="./assets/logo.svg" alt="logo">
+      </figure>
+      <div class="footer__social--list">
+        <a href="https://github.com/joshuakaufman3827" target="_blank" class="footer__social--link">GitHub</a>
+        <a href="https://www.linkedin.com/in/joshbkaufman/" target="_blank" class="footer__social--link">LinkedIn</a>
+        <a href="#contact" class="footer__social--link">Contact</a>
+        <a href="./assets/Example Resume.pdf" target="_blank" class="footer__social--link">Resume</a>
       </div>
-       <div class="footer__copyright">Copyright 2026 Joshua Kaufman. All rights reserved.</div>
+      <div class="footer__copyright">Copyright © 2026 Joshua Kaufman | Front-End Developer</div>
     </div>
   </footer>
 </body>
-
 </html>
