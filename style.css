@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap');
 
+
 /* ==========================================================================
    Global Variables & Resets
    ========================================================================== */
@@ -21,7 +22,6 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
-
 body {
     background-color: var(--bg-light-cream);
     color: var(--text-dark);
@@ -36,10 +36,10 @@ button { cursor: pointer; border: none; background: none; }
    Reusable Design Components
    ========================================================================== */
 .container {
-    width: 100%;
+     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 80px 24px;
+     padding: 80px 24px;
 }
 
 .section-tag {
@@ -89,7 +89,7 @@ button { cursor: pointer; border: none; background: none; }
    Header & Navigation (Dark Purple Layer)
    ========================================================================== */
 .hero-section {
-    background-color: blue;
+    background-color: var(--bg-dark-purple);
     color: var(--text-white);
     min-height: 100vh;
     display: flex;
@@ -104,8 +104,8 @@ button { cursor: pointer; border: none; background: none; }
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 40px;
-    height: 100px;
+    padding: 20px 40px;    
+height: 100px;
 }
 
 #personal-logo {
@@ -120,7 +120,7 @@ button { cursor: pointer; border: none; background: none; }
 
 .nav__link--anchor {
     font-size: 16px;
-    color: var(--text-white);
+     color: var(--text-white);
     font-weight: 700;
     opacity: 0.8;
     transition: var(--transition-smooth);
@@ -130,11 +130,11 @@ button { cursor: pointer; border: none; background: none; }
     opacity: 1;
     color: var(--accent-orange);
 }
-
+/* ==========================================================================*/
 .hero-content {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     justify-content: center;
     max-width: 800px;
     margin: 0 auto;
@@ -173,7 +173,7 @@ button { cursor: pointer; border: none; background: none; }
 
 .social__list {
     display: flex;
-    gap: 16px;
+     gap: 16px;
 }
 
 .social__link {
@@ -337,7 +337,7 @@ button { cursor: pointer; border: none; background: none; }
     margin-top: auto;
 }
 
-.btn-text-link {
+btn-text-link {
     font-weight: 700;
     color: var(--text-dark);
     transition: var(--transition-smooth);
@@ -413,7 +413,7 @@ button { cursor: pointer; border: none; background: none; }
 input.input { height: 50px; }
 textarea.input { height: 140px; resize: none; }
 
-.input:focus {
+    .input:focus {
     border-color: var(--accent-purple);
     box-shadow: 0 0 0 4px var(--accent-purple-glow);
     background-color: var(--text-white);
@@ -437,7 +437,7 @@ textarea.input { height: 140px; resize: none; }
 /* ==========================================================================
    Fixed Floating Action Mail Button
    ========================================================================== */
-.floating-mail-btn {
+   .floating-mail-btn {
     position: fixed;
     bottom: 32px;
     right: 32px;
@@ -455,7 +455,7 @@ textarea.input { height: 140px; resize: none; }
     transition: var(--transition-smooth);
 }
 
-.floating-mail-btn:hover {
+floating-mail-btn:hover {
     background-color: var(--accent-orange);
     transform: scale(1.1);
 }
@@ -464,8 +464,7 @@ textarea.input { height: 140px; resize: none; }
    Footer
    ========================================================================== */
 footer {
-    position: relative;
-    background-color: black;
+    background-color: var(--bg-dark-purple);
     color: var(--text-white);
     padding: 60px 24px;
 }
@@ -480,13 +479,13 @@ footer {
 }
 
 .footer__logo--img {
-    width: 100px;
-    height: 100px;
-}
+    width: 50px;
+    height: 50px;
+}  
 
 .footer__social--list {
-    display: flex;
-    gap: 32px;
+     display: flex;
+      gap: 32px;
 }
 
 .footer__social--link {
@@ -507,51 +506,10 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .title {
-        font-size: 80px;
-    }
-    .header__para {
-        font-size: 20px;
-    }
-    .modal {
-        top: 0;
-        left: 0;
-        transform: none;
-        height: auto;
-        width: 100%;
-        flex-direction: column-reverse;
-        border-radius: 0;
-    }
-    .modal__half {
-        width: 100%;
-    }
-}
-
-/* Small Phones */
-@media (max-width: 400px) {
-    .title {
-        font-size: 52px;
-    }
-    .header__para {
-        font-size: 18px;
-    }
-    .nav__link:first-child {
-        display: none;
-    }
-    .project__description--para {
-        display: none;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .project__description--subtitle {
-        margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
-    }
     .navbar { padding: 20px; }
     .nav__link--list { display: none; } /* Standard simplification for flat mobile displays */
     .hero-title { font-size: 48px; }
     .project__list { grid-template-columns: 1fr; }
 }
+
+

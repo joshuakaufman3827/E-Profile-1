@@ -21,7 +21,6 @@ function moveBackground(event) {
     shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
   }
 }
-
 /**
  * Toggles global dark theme rendering parameters on the document body element.
  */
@@ -40,7 +39,7 @@ function toggleContrast() {
  * localized submission visual component states.
  */
 function contact(event) {
-  event.preventDefault();
+event.preventDefault();
   
   const submitButton = document.getElementById("contact__submit");
   const originalButtonText = submitButton.innerText;
@@ -56,7 +55,7 @@ function contact(event) {
     'template_hs55b8',
     event.target,
     'user_hEvFFvKV8WJkG9qTY' 
-  )
+)
   .then(() => {
     // Clear the form fields
     event.target.reset();
@@ -84,4 +83,4 @@ function contact(event) {
       "The email service is currently experiencing technical issues. Please email me directly at joshuakaufman3827@gmail.com"
     );
   });
-}
+}       
